@@ -79,3 +79,12 @@ framefinder/
     cli.py              `index` and `search` commands
   tests/test_logic.py   tests that run without MLX
 ```
+
+
+
+## Demo
+<img width="972" height="641" alt="command" src="https://github.com/user-attachments/assets/7205299b-6463-40df-b64c-89d9665b5d4f" />
+<img width="1170" height="923" alt="result2" src="https://github.com/user-attachments/assets/72d6727b-f464-404e-9adb-73889920aa3d" />
+<img width="1032" height="548" alt="result1" src="https://github.com/user-attachments/assets/32d67a23-a3c4-4120-8c41-6e68b7ceda6b" />
+
+
