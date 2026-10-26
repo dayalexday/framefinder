@@ -5,6 +5,14 @@ Runs fully offline on an Apple Silicon Mac using a CLIP model on [MLX](https://g
 
 ## How it works
 
+
+Index (once): scans a folder of videos, grabs a frame every 2 seconds, and runs each frame through CLIP’s image half (via MLX) to get a vector. Those vectors are saved to disk with the video name and timestamp.
+
+Search: runs your text through CLIP’s text half (via MLX) to get a vector, loads the saved frame vectors, and compares them using a dot product (cosine similarity). The closest matches are ranked, near-duplicate neighbors are skipped, and the top results are printed with timestamps. Thumbnails and an HTML page are also saved.
+
+
+
+
 1. **Index**: samples a frame every N seconds from each video and turns it into an embedding with CLIP's image encoder.
 2. **Search**: turns your description into an embedding with CLIP's text encoder and ranks frames by cosine similarity.
 3. Results are printed with timestamps, and thumbnails plus a `results.html` contact sheet are saved.
