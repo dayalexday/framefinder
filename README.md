@@ -3,6 +3,8 @@
 Describe a scene in plain English and find the matching moments in a folder of videos.
 Runs fully offline on an Apple Silicon Mac using a CLIP model on [MLX](https://github.com/ml-explore/mlx).
 
+I also built [framefinder-agent](https://github.com/dayalexday/framefinder-agent), which puts an agent on top of this. The agents check whether the frames FrameFinder returns actually match the text and if not it searches again with a better phrase.
+
 ## How it works
 
 
